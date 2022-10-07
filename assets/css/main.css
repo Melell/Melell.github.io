@@ -4166,12 +4166,15 @@ input, select, textarea {
 
 
 
-	/* My custom stuff */
+	/* MY CUSTOM STUFF */
+
+	/* Smooth transitions for texts */
 	p{
 		transition: all 0.5s ease-in-out;
 	}
 
 
+	/* Left game images positioning */
 	.my-image-left img{
 		width: 32vw;
 		height: 18vw;
@@ -4182,6 +4185,7 @@ input, select, textarea {
 		transition: all 0.5s ease-in-out;
 	}
 
+	/* Right game images positioning */
 	.my-image-right img{
 		width: 32vw;
 		height: 18vw;
@@ -4192,11 +4196,13 @@ input, select, textarea {
 		transition: all 0.5s ease-in-out;
 	}
 
+	/* Transition stuff? */
 	a.clickable-img{
 		border-bottom: none;
 		transition: 0.2s;
 	}
 
+	/* If on hoverable device, logic for images' hover animations */
 	@media (hover: hover){
 		.clickable-img:hover{
 			transform: scale(1.06);
@@ -4209,18 +4215,21 @@ input, select, textarea {
 	}
 	
 
+	/* Likedin, github and yt positioning */
 	.logo-link{
 		border-bottom: none;
 		margin-right: 15px;
 	}
 
 
+	/* Likedin, github and yt positioning on small device */
 	@media screen and (max-width: 860px) {
 		.logo-link{
 			margin-right: 3vw;
 		}
 	}
 
+	/* Reassign normal icons for linkedin, github and yt when not hovering */
 	#linkedin > img{
 		content: url("../../images/LinkedIn.png");
 	}
@@ -4233,6 +4242,7 @@ input, select, textarea {
 		content: url("../../images/GitHub.png");
 	}
 
+	/* If on hoverable device, logic for hovering over linkedin, github and yt icons */
 	@media (hover: hover){
 		.logo-link > img:hover{
 			transform: scale(1.07);
@@ -4250,4 +4260,41 @@ input, select, textarea {
 		#github > img:hover{
 			content: url("../../images/GitHubActive.png");
 		}
+	}
+
+
+	/* Positioning of entire contact icons section in the footer */
+	.contact{
+		padding-top: 25px !important;
+	}
+
+	/* Overall positioning of contact icon image and text */
+	.contact-item{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	/* Leave less padding of contact icons(home, phone, and email) in the footer in small devices */
+	@media screen and (max-width: 980px) {
+		.contact-item{
+			padding-left: 0px !important;
+		}
+	}
+
+	/* Size and positioning of contact(home, phone, and email) icon images in the footer */
+	.footer-icon{
+		width: 5vw;
+		height: 5vw;
+		max-width: 48px;
+		max-height: 48px;
+		min-width: 34px;
+		min-height: 34px;
+		margin-right: 10px;
+	}
+
+	/* Positioning of contact info(home, phone and email) text with respect to icon */
+	.footer-icon-text{
+		margin: 0px;
+		padding:0px;
 	}

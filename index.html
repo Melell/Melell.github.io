@@ -144,21 +144,26 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
+							<h2 class="major">Contact me</h2>
+							<p>If you have any doubt or want to contact me for any job opportunities, leave a message in the section below or send me an email to <b>m.echeverriamajadas@gmail.com</b>.</p>
+							<form method="POST" action="https://formsubmit.co/m.echeverriamajadas@gmail.com">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name" required="required" maxlength="100" />
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
+										<input type="email" name="email" id="email" required="required" maxlength="150" />
+									</div>
+									<div class="field">
+										<label for="subject">Subject</label>
+										<input type="text" name="_subject" id="subject" maxlength="100" />
+										<input type="hidden" name="_next" value="elements.html">
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
+										<textarea name="message" id="message" rows="4" required="required" maxlength="5000"></textarea>
 									</div>
 								</div>
 								<ul class="actions">
@@ -166,19 +171,26 @@
 								</ul>
 							</form>
 							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
+								<li class="contact-item"><!--class="icon solid fa-home"-->
+									<img class="footer-icon" src="images/House.png" alt="Home Icon"/>
+									<p class="footer-icon-text">San Sebastian, Spain</p>
 								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">m.echeverriamajadas@gmail.com</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								<li class="contact-item"><!--class="icon solid fa-phone"-->
+									<img class="footer-icon" src="images/Phone.png" alt=""/>
+									<p class="footer-icon-text">+34 616534962</p>
+								</li>
+								<li class="contact-item"><!--class="icon solid fa-envelope"-->
+									<img class="footer-icon" src="images/Email.png" alt="Email Icon"/>
+									<a class="footer-icon-text" href="#">m.echeverriamajadas@gmail.com</a>
+								</li>
+								<li class="contact-item">
+									<a href="www.linkedin.com/in/miguel-echeverria-majadas" class="logo-link" id="linkedin" target="_blank"><img src="images/LinkedIn.png" alt="LinkedIn"/></a>
+									<a href="https://github.com/Melell" class="logo-link" id="github" target="_blank"><img src="images/GitHub.png" alt="GitHub"/></a>
+									<a href="https://www.youtube.com/channel/UCU7kYy_D3UsaLmHRGg5A0tw" class="logo-link" id="youtube" target="_blank"><img src="images/YouTube.png" alt="YouTube"/></a>
+								</li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Miguel Echeverria. All rights reserved.</li><!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
 							</ul>
 						</div>
 					</section>
