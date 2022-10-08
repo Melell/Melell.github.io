@@ -7,6 +7,11 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* This particular section was added by me */
+html{
+	scroll-behavior: smooth;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -4229,6 +4234,7 @@ input, select, textarea {
 		}
 	}
 
+
 	/* Reassign normal icons for linkedin, github and yt when not hovering */
 	#linkedin > img{
 		content: url("../../images/LinkedIn.png");
@@ -4297,4 +4303,32 @@ input, select, textarea {
 	.footer-icon-text{
 		margin: 0px;
 		padding:0px;
+	}
+
+
+	/* Small header icons' positioning */
+	.header.icon{
+		margin-right: 25px;
+	}
+
+	@media screen and (max-width: 500px) {
+		.header.icon{
+			margin-right: 5%;
+		}
+	}
+	
+
+	/* If on hoverable device, apply hover logic for svg icons */
+	@media (hover: hover){
+		a#red-icon:hover{
+			color: #f62323 !important;
+		}
+
+		a#purple-icon:hover{
+			color: #bd2df3 !important;
+		}
+
+		a#blue-icon:hover{
+			color: #3891e5 !important;
+		}
 	}

@@ -20,13 +20,24 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Miguel Echeverria</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
+
+						<div class="header-icon-wrapper">
+							<a class="header icon brands fa-linkedin" id="blue-icon" href="https://www.linkedin.com/in/miguel-echeverria-majadas/" target="_blank"></a>
+							<a class="header icon brands fa-github" id="purple-icon" href="https://github.com/Melell" target="_blank"></a>
+							<a class="header icon brands fa-youtube" id="red-icon" href="https://www.youtube.com/channel/UCU7kYy_D3UsaLmHRGg5A0tw" target="_blank"></a>
+						</div>
+						
+						<nav id="header-nav-menu"> <!-- <a href="#menu">Menu</a> -->
+							<a href="#page-wrapper">Home</a>
+							<a href="#one">Games</a>
+							<a href="elements.html">Projects</a>
+							<a href="#footer">Contact</a>
 						</nav>
+
 					</header>
 
 				<!-- Menu -->
+				<!--
 					<nav id="menu">
 						<div class="inner">
 							<h2>Menu</h2>
@@ -40,6 +51,7 @@
 							<a href="#" class="close">Close</a>
 						</div>
 					</nav>
+				-->
 
 				<!-- Banner -->
 					<section id="banner">
@@ -60,7 +72,7 @@
 								<p>Hello! I am a passionate and driven C++ game programmer, who is interested in working on either gameplay, tools or engine programming.</p>
 								<p>This webpage was created with html, css, javascript and sass, and it showcases some of the games and personal projects I have worked on so far. Take a look and enjoy! :)</p>
 								<p>For any enquiries, don't hesitate and send me an email to <b>m.echeverriamajadas@gmail.com</b>. Also, check out my LinkedIn, Github or Youtube!</p>
-								<a href="www.linkedin.com/in/miguel-echeverria-majadas" class="logo-link" id="linkedin" target="_blank"><img src="images/LinkedIn.png" alt="LinkedIn"/></a>
+								<a href="https://www.linkedin.com/in/miguel-echeverria-majadas/" class="logo-link" id="linkedin" target="_blank"><img src="images/LinkedIn.png" alt="LinkedIn"/></a>
 								<a href="https://github.com/Melell" class="logo-link" id="github" target="_blank"><img src="images/GitHub.png" alt="GitHub"/></a>
 								<a href="https://www.youtube.com/channel/UCU7kYy_D3UsaLmHRGg5A0tw" class="logo-link" id="youtube" target="_blank"><img src="images/YouTube.png" alt="YouTube"/></a>
 							</div>
@@ -155,10 +167,6 @@
 									<div class="field">
 										<label for="email">Email</label>
 										<input type="email" name="email" id="email" required="required" maxlength="150" />
-									</div>
-									<div class="field">
-										<label for="subject">Subject</label>
-										<input type="text" name="_subject" id="subject" maxlength="100" />
 										<input type="hidden" name="_next" value="elements.html">
 									</div>
 									<div class="field">
@@ -181,7 +189,7 @@
 								</li>
 								<li class="contact-item"><!--class="icon solid fa-envelope"-->
 									<img class="footer-icon" src="images/Email.png" alt="Email Icon"/>
-									<a class="footer-icon-text" href="#">m.echeverriamajadas@gmail.com</a>
+									<p class="footer-icon-text"><b>m.echeverriamajadas@gmail.com</b></p>
 								</li>
 								<li class="contact-item">
 									<a href="www.linkedin.com/in/miguel-echeverria-majadas" class="logo-link" id="linkedin" target="_blank"><img src="images/LinkedIn.png" alt="LinkedIn"/></a>
