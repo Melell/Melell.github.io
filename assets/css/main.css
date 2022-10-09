@@ -4332,3 +4332,65 @@ input, select, textarea {
 			color: #3891e5 !important;
 		}
 	}
+
+
+	/* Small text icons' positioning */
+	.text.icon{
+		margin-right: 25px;
+	}
+
+	@media screen and (max-width: 500px) {
+		.text.icon{
+			margin-right: 5%;
+		}
+	}
+
+
+	/* Hover animation and general logic for nav menu items */
+	.header-nav-menu{
+		position: relative;
+	}
+
+	.header-nav-element{
+		display: inline-block;
+		position: relative;
+		transition: all 800ms ease-in-out;
+	}
+
+	.header-nav-element::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 0%;
+		height: 2px;
+		background: white;
+		transition: all 200ms ease-in-out;
+	}
+
+	.header-nav-element::after{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 0%;
+		height: 2px;
+		background: white;
+		transition: all 400ms ease-in-out;
+	}
+
+	@media (hover: hover){
+		.header-nav-element:hover::before, .header-nav-element:hover::after{
+			width: 100%;
+			left: 0;
+		}
+
+		.header-nav-element:hover{
+			background-color: rgba(255, 255, 255, 0.1);
+			border-radius: 10px;
+		}
+
+		.header-nav-element:hover > a, .blue-on-hover:hover{
+			color: rgb(20, 179, 139) !important;
+		}
+	}
