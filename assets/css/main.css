@@ -4394,3 +4394,12 @@ input, select, textarea {
 			color: rgb(20, 179, 139) !important;
 		}
 	}
+
+
+	/* Make hover animations for project images slower? (Mainly change color) */
+	@media (hover: hover){
+		.image:hover{
+			color: rgb(20, 179, 139) !important;
+			transition: color 200ms ease-in-out !important;
+		}
+	}
