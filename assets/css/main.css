@@ -4419,7 +4419,7 @@ input, select, textarea {
 	}
 
 
-	/* Logic for game info list (in about me section) */
+	/* Logic for game info list (in about me section of each game) */
 	ul.game-info-list{
 		list-style-type: none;
 		display: flex;
@@ -4430,4 +4430,16 @@ input, select, textarea {
 
 	li.game-info-item{
 		padding-left: 0px;
+	}
+
+
+	/* Adjust the size of the video trailer for each game */
+	.trailer{
+		width: 48vw;
+		height: 27vw;
+		min-width: 360px;
+		min-height: 202.5px;
+		max-width: 720px;
+		max-height: 405px;
+		transition: all 500ms ease-in-out;
 	}
