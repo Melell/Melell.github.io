@@ -119,63 +119,56 @@
 									<div id="entity-comp-system" class="box my-box">
 										<h3 class="my-work-separator">Entity Component System</h3>
 										<p>
-											<a class="blue-on-hover" href="images/screenshots/shadow-racer/race-system/accept_challenge.webp"><span class="image right clickable-img"><img src="images/screenshots/shadow-racer/race-system/accept_challenge.webp" alt="Race-Screenshot-1" /></span></a>
-											<a class="blue-on-hover" href="images/screenshots/shadow-racer/race-system/bumper_handing.webp"><span class="image right clickable-img"><img src="images/screenshots/shadow-racer/race-system/bumper_handing.webp" alt="Race-Screenshot-2" /></span></a>
-											Using UE4's event dispatchers, I developed a reusable race system that allowed other developers to easily create their own semi-scripted 1v1 races against an AI car.
+											Architected the entity-component system for the engine, with an integrated custom memory manager to store gameobjects and components of the same type in memory pools for faster access.
 										</p>
-										<p>
-											I also used that system to build the gameplay for an entire level, where the player races an enemy car, in order to obtain a car upgrade.
-										</p>
-										<ul>
-											<li>Player dialogue with enemy car</li>
-											<li>Race states logic</li>
-											<li>Enemy car AI</li>
-											<li>Breakable mining carts</li>
-											<li>Cone interactables</li>
-											<li>Race cinematics</li>
-										</ul>
 										<iframe src="https://www.youtube.com/embed/7cDI4O5SWLQ?&autoplay=1&mute=1&rel=0&version=3&loop=1&playlist=7cDI4O5SWLQ" title="Shadow Racer Release Trailer" class="trailer"></iframe>
 										<br>
 									</div>
 									<div id="core-engine" class="box my-box">
 										<h3 class="my-work-separator">Core Engine Systems</h3>
 											<span class="image right"><img src="images/pic02.jpg" alt="" /></span>
+											<p>
+												Engineered many of our custom C++ engine's core systems, including but not limited to:
+											</p>
 											<ul>
-												<li>Designed one of the game's main levels (race level)</li>
-												<li>Built said level from scratch using UE4's landscape and foliage systems</li>
-												<li>Collaborated with other level builders to improve the visual quality of their levels</li>
+												<li>Memory manager with object pooling mechanism</li>
+												<li>Factory system using allocators from memory manager</li>
+												<li>Serialization system for saving/loading of levels and archetypes</li>
+												<li>Resource management system with ability to create custom importers</li>
+												<li>Improved cache coherency through managers that update all components of the same type together</li>
+												<li>Editor addable components database</li>
 											</ul>
 										<br>
 									</div>
 									<div id="boat-movement" class="box my-box">
 										<h3 class="my-work-separator">Boat Movement</h3>
-											<span class="image left"><img src="images/pic01.jpg" alt="" /></span>
-											<ul>
-												<li>Implemented several high quality cinematics that added context to the story and the mechanics of the game</li>
-												<li>Leveraging Unreal's sequencer system, created smooth camera transitions between cinematics and gameplay</li>
-											</ul>
+											<span class="image right"><img src="images/pic01.jpg" alt="" /></span>
+											<p>
+												Worked side by side with another programmer on the boat controller used for all the boats in the game, with adjustable parameters for speed, maneurability etc.
+											</p>
 										<br>
 									</div>
 									<div id="boat-mechanics" class="box my-box">
 										<h3 class="my-work-separator">Boats' mechanics</h3>
 										<span class="image right"><img src="images/pic02.jpg" alt="" /></span>
+										<p>
+											Implemented a variety of mechanics related to some of the boats, such as:
+										</p>
 										<ul>
-											<li>Added controller rumble feedback to player mechanics like flashing, drifting, or using turbo</li>
-											<li>Added environment elements like animated crows that fly away when close to player, as well controller rumble when interacting with certain props</li>
-											<li>Designed and implemented some of the sound effects: objects' destruction, impact, car upgrading and flashing, radio, menu sfx etc.</li>
-											<li>Integrated ambience loopable sounds: dust ambience, darkness ambience when player is close to elements interactable with flash etc.</li>
+											<li>Barrel throwing mechanic for the trirreme boat</li>
+											<li>Trirreme boat special rowing/dash attack</li>
+											<li>Galleon's cannonball attack aiming UI</li>
 										</ul>
 										<br>
 									</div>
 									<div id="cinematics" class="box my-box">
 									<h3 class="my-work-separator">Cinematics</h3>
 										<p>
-											Transformed the visual quality of the levels through clever use of Unreal's lighting and post-process effects, while monitoring performance.
+											Programmed several cinematics/camera effects to indicate the start/end of a match, and make it clear which of the players has won.
 											<ul>
-												<li>Outdoor lighting and fog simulating a desert-like environment</li>
-												<li>God Rays generated by sunlight</li>
-												<li>Car's headlights as volumetric spotlights</li>
-												<li>Other smaller lighting elements</li>
+												<li>Match starting cinematic different for each player (split screen and online)</li>
+												<li>Viewport interpolation for showcasing match winner (split screen)</li>
+												<li>Small cinematic to showcase winner (online)</li>
 											</ul>
 										</p>
 										<div class="box alt">
@@ -192,28 +185,25 @@
 									<div id="other-gameplay-tasks" class="box my-box">
 										<h3 class="my-work-separator">Other Gameplay Tasks</h3>
 										<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>
-											Created a small set of vfx using Unreal's material editor and Niagara system:
+											Worked on other smaller gameplay tasks like for example:
 											<ul>
-												<li>Car Turbo</li>
-												<li>Darkness Portals</li>
-												<li>Drifting Marks</li>
-												<li>Smoke Particles</li>
-												<li>Car Explosion</li>
-												<li>Lightflash Recovery Effect</li>
+												<li>Flocking system for birds that fly around the map</li>
+												<li>Addition of some of the sfx</li>
+												<li>Addition of some of the particles</li>
+												<li>Billboard component for showcasing the score of each player on top of their boat</li>
+												<li>Arrows on top of players, to easily find them and distinguish between them</li>
 											</ul>
 										</p>
 									</div>
 									<div id="3d-modelling" class="box my-box">
 										<h3 class="my-work-separator">3D Modelling</h3>
 										<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>
-											Created a small set of vfx using Unreal's material editor and Niagara system:
+											Assisted the main modeller by creating some of the models used in the game with 3ds Max:
 											<ul>
-												<li>Car Turbo</li>
-												<li>Darkness Portals</li>
-												<li>Drifting Marks</li>
-												<li>Smoke Particles</li>
-												<li>Car Explosion</li>
-												<li>Lightflash Recovery Effect</li>
+												<li>Trirreme boat and its collider mesh</li>
+												<li>Paddles for said boat</li>
+												<li>Barrels</li>
+												<li>Torpedo</li>
 											</ul>
 										</p>
 									</div>
