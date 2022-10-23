@@ -4251,15 +4251,15 @@ input, select, textarea {
 
 	/* Reassign normal icons for linkedin, github and yt when not hovering */
 	#linkedin > img{
-		content: url("../../images/LinkedIn.png");
+		content: url("../../images/logos/LinkedIn.png");
 	}
 
 	#youtube > img{
-		content: url("../../images/YouTube.png");
+		content: url("../../images/logos/YouTube.png");
 	}
 
 	#github > img{
-		content: url("../../images/GitHub.png");
+		content: url("../../images/logos/GitHub.png");
 	}
 
 	/* If on hoverable device, logic for hovering over linkedin, github and yt icons */
@@ -4270,15 +4270,15 @@ input, select, textarea {
 		}
 
 		#linkedin > img:hover{
-			content: url("../../images/LinkedInActive.png");
+			content: url("../../images/logos/LinkedInActive.png");
 		}
 		
 		#youtube > img:hover{
-			content: url("../../images/YouTubeActive.png");
+			content: url("../../images/logos/YouTubeActive.png");
 		}
 
 		#github > img:hover{
-			content: url("../../images/GitHubActive.png");
+			content: url("../../images/logos/GitHubActive.png");
 		}
 	}
 
@@ -4435,12 +4435,12 @@ input, select, textarea {
 
 	/* Adjust the size of the video trailer for each game */
 	.trailer{
-		width: 48vw;
-		height: 27vw;
-		min-width: 360px;
-		min-height: 202.5px;
-		max-width: 720px;
-		max-height: 405px;
+		width: 54vw;
+		height: 30.375vw;
+		min-width: 320px;
+		min-height: 180px;
+		max-width: 900px;
+		max-height: 506.25px;
 		transition: all 500ms ease-in-out;
 	}
 
