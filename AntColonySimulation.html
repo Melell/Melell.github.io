@@ -58,17 +58,12 @@
 
                             <div class="inner">
 
-                                <div id="disclaimer">
-                                    <h2 class="major">Work In Progress</h2>
-                                    <p>This page is currently being worked on.</p>
-                                </div>
-
                                 <div id="shortcuts">
                                     <br><br>
                                     <h2 class="major">Shortcuts</h2>
                                     <ul class="actions small">
                                         <li><a href="#shortcuts" class="button small blue-on-hover icon solid fa-link">About</a></li>
-                                        <li><a href="#" class="button small blue-on-hover icon solid fa-link">Feature A</a></li>
+                                        <li><a href="#demo-video" class="button small blue-on-hover icon solid fa-link">Demo Video</a></li>
                                     </ul>
                                 </div>
 
@@ -76,7 +71,21 @@
                                     <br><br>
                                     <h2 class="major">About</h2>
                                     <p>
-                                        AI pair research project implemented as part of a subject where I learned other AI techniques such as state machines, behavior trees, steering behaviors, A* pathfinding, or terrain analysis. For more information on how the project was implemented, check out the research paper we wrote <a href="docs/ant-colony-sim/RESEARCH_PAPER.pdf" class="blue-on-hover" target="_blank">here.</a>
+                                        AI pair research project implemented as part of a course where I learned other AI techniques such as state machines, behavior trees,
+                                        steering behaviors, A* pathfinding, or terrain analysis.
+                                        In this project we explore a technique called "stigmergy", whereby agents in a group communicate by modifying their environment.
+                                    </p>
+                                    <p>
+                                        
+                                        Ants do this by leaving behind trails of chemical substances called "pheromones". They're able to sense these, and distinguish
+                                        between the ones left by ants who just left the nest (blue in our demo) or ants that are carrying food (green in our demo).
+                                        This means they'll follow the general direction where they sense the highest concentration of pheromones of the type they're
+                                        interested in, while leaving pheromones themselves. Eventually ants will form paths to/from food sources and the nest, and these
+                                        will get optimized over time to be as short as possible.
+                                    </p>
+                                    <p>
+                                        For implementation details, keep reading. However, for a more detailed explanation of how the project works, or some of the existing
+                                        research we based our implementation on, check out the research paper we wrote, <a href="docs/ant-colony-sim/RESEARCH_PAPER.pdf" class="blue-on-hover" target="_blank">here.</a>
                                     </p>
                                     <p>
                                         <a href="https://github.com/Melell/Ant-Colony-Simulation" class="blue-on-hover icon brands fa-github" target="_blank">&nbsp;&nbsp;Link to GitHub repo</a>
@@ -89,11 +98,18 @@
                                     </ul>
                                 </div>
 
-                                <div id="feature-a">
+                                <div id="demo-video">
                                     <br><br>
-                                    <h2 class="major">Feature A</h2>
-                                    <h6 style="font-weight: lighter;">Demo Video</h6>
+                                    <h2 class="major">Demo Video</h2>
                                     <iframe src="https://www.youtube.com/embed/2ASpOako-P0?autoplay=1&mute=1&rel=0&loop=1&playlist=2ASpOako-P0" title="Ant Colony Simulation" class="trailer dynamic-vid" allowfullscreen></iframe>
+                                </div>
+
+                                <div id="impl-details"></div>
+                                    <br><br>
+                                    <h2 class="major">Implementation Details</h2>
+                                    <p>
+                                        
+                                    </p>
                                 </div>
 
                             </div>
